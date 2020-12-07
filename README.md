@@ -58,9 +58,11 @@ Now, let’s increase the size of our workspace’s viewport. Once the navigatio
 
 Let’s fix this by targeting the link elements and give them margin to only one side, the right. In section 4, Modules Styles, of your stylesheet location the selector group of:
 
+```
 .site-nav-left li:not(:last-child),
 .site-nav-right li:not(:last-child),
 .site-nav-mobile li:not(:last-child) { }
+```
 and update spacing property that is being used so it spaces the elements apart by 30px.
 
 Note: we are using a few pseudo-selectors. The first :not() looks at all of li elements in its respective list and then applies a specific CSS property to each li that is not :last-child or last list item.
